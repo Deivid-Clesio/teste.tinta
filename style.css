@@ -1,0 +1,67 @@
+body{
+    text-align: center;
+    height: 100vh;
+}
+
+#nome{
+    background:linear-gradient(to right ,rgb(76, 24, 167) , rgb(41, 55, 135) , rgb(24, 189, 218));
+    height: 50px;
+    padding: 15px;
+    border: 300px;
+    color: blanchedalmond;
+}
+
+#sobre{
+    background-color: lightgray;
+    padding: 10px;
+    border: 15px;
+    animation: colorsobre 5.5s ease-in infinite;
+
+}
+#produtos{
+    background:linear-gradient(to left ,rgb(153, 139, 178) , rgb(105, 122, 218) , rgb(93, 211, 232));
+    height:150px;
+
+}
+
+#botao{
+    margin-top: 50px;
+}
+a{
+    text-decoration: none;
+    padding: 15px;
+    animation: colorBotao 6.5s ease-out infinite;
+    border-radius: 15px;
+}
+
+footer{
+    margin-top: 50px;
+    padding: 15px;
+    border:15px
+
+}
+
+@keyframes colorsobre{
+    0%{
+        background-color: rgb(69, 123, 123);
+    }
+    50%{
+        background-color: rgb(154, 196, 216);
+    }
+    100%{
+        background-color: rgb(225, 254, 255);
+    }
+
+}
+
+@keyframes colorBotao{
+    0%{
+        background-color: rgb(48, 25, 69);
+    }
+    50%{
+        background-color: rgb(8, 8, 146);
+    }
+    100%{
+        background-color: rgb(7, 107, 107);
+    }
+}
