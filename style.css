@@ -1,3 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body{
     text-align: center;
     height: 100vh;
@@ -5,34 +11,77 @@ body{
 
 #nome{
     background:linear-gradient(to right ,rgb(76, 24, 167) , rgb(41, 55, 135) , rgb(24, 189, 218));
-    height: 50px;
     padding: 15px;
     border: 300px;
     color: blanchedalmond;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.FontSize{
+    background-color: rgb(175, 173, 202);
+    padding: 5px;
+    border-radius: 7px;
+    border: none;
+}
+.FontSize:hover{
+    transform: translateY(-2px);
+    transition: all 0.5s;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.329);
+}
+
+
+.tamanho{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+
 }
 
 #sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
     background-color: lightgray;
-    padding: 10px;
+    padding: 25px;
     border: 15px;
     animation: colorsobre 5.5s ease-in infinite;
+    border-radius: 15px;
+    margin: 25px;
+    height: 175px;
 
 }
+
 #produtos{
     background:linear-gradient(to left ,rgb(153, 139, 178) , rgb(105, 122, 218) , rgb(93, 211, 232));
-    height:150px;
+    height:175px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    border-radius: 15px;
+    margin: 25px;
 
 }
-
 #botao{
     margin-top: 50px;
+
 }
-a{
+
+.saibaMais{
     text-decoration: none;
     padding: 15px;
     animation: colorBotao 6.5s ease-out infinite;
-    border-radius: 15px;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap
+
 }
+
 
 footer{
     margin-top: 50px;
@@ -41,12 +90,17 @@ footer{
 
 }
 
+a{
+    gap: 10px;
+    padding:15px;
+}
+
 @keyframes colorsobre{
     0%{
-        background-color: rgb(69, 123, 123);
+        background-color: rgb(192, 236, 236);
     }
     50%{
-        background-color: rgb(154, 196, 216);
+        background-color: rgb(188, 221, 236);
     }
     100%{
         background-color: rgb(225, 254, 255);
